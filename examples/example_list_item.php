@@ -28,7 +28,7 @@ if($_GET['code']) {
 	// We construct the item to POST
 	$item = array(
 		"title" => "Item De Teste - Por Favor, Não Ofertar! --kc:off",
-        "category_id" => "MLB257111",
+        "category_id" => "MLV257111",
         "price" => 10,
         "currency_id" => "BRL",
         "available_quantity" => 1,
@@ -109,6 +109,6 @@ if($_GET['code']) {
 
 } else {
 
-	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLB']) . '">Login using MercadoLibre oAuth 2.0</a>';
+	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLV']) . '">Login using MercadoLibre oAuth 2.0</a>';
 }
 
